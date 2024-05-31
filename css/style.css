@@ -85,7 +85,6 @@ section{
 
   header .navbar {
     position: fixed;
-    margin-top: 35px;
     top: 6.5rem;
     right: -120%;
     width: 75%;
@@ -127,6 +126,7 @@ section{
     right: 0;
   }
 }
+
 @media screen and (max-width: 480px) {
   #menu{
     display: block;
@@ -137,14 +137,13 @@ section{
   }
   header .navbar {
     position: fixed;
-    margin-top: 35px;
     top: 6.5rem;
     right: -120%;
     width: 75%;
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #A0DEFF;
+    background-color: #6FDCE3;
   }
 
   header .navbar ul{
@@ -168,7 +167,7 @@ section{
 
   header .navbar ul li a.active,
   header .navbar ul li a:hover{
-    color: #FFF9D0;
+    color: #FFFDB5;
   }
 
   .fa-times{
@@ -179,6 +178,7 @@ section{
     right: 0;
   }
 }
+
 @media screen and (max-width: 390px) {
   #menu{
     display: block;
@@ -189,14 +189,13 @@ section{
   }
   header .navbar {
     position: fixed;
-    margin-top: 35px;
     top: 6.5rem;
     right: -120%;
     width: 75%;
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #A0DEFF;
+    background-color: #6FDCE3;
   }
 
   header .navbar ul{
@@ -220,7 +219,7 @@ section{
 
   header .navbar ul li a.active,
   header .navbar ul li a:hover{
-    color: #FFF9D0;
+    color: #FFFDB5;
   }
 
   .fa-times{
@@ -292,13 +291,13 @@ article{
 .home .content h2 span{
   font-size: 5rem;
   font-weight: 600;
-  color: #0A6847;
+  color: #000;
 }
 
 .home .content p{
   font-size: 2.5rem;
   font-weight: 600;
-  color: #FDDE55;
+  color: #000;
   padding: 1rem;
 }
 
@@ -324,7 +323,7 @@ article{
 .home .btn i{
   font-size: 1.5rem;
   margin-left: 1rem;
-  color: #F3CA52;
+  color: #fff;
   transition: 0.3s;
 }
 
@@ -410,13 +409,13 @@ main aside .social-media li a:hover {
   }  */
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 392px) {
   .home .btn{
     margin-left: 5rem;
   }
 
   .home .image img{
-    margin-top: -9rem;
+    margin-bottom: -5rem;
   }
 
   .home .content p{
@@ -444,13 +443,14 @@ main aside .social-media li a:hover {
     font-size: 3rem;
   }  */
 }
+
 @media screen and (max-width: 375px) {
   .home .btn{
     margin-left: 5rem;
   }
 
   .home .image img{
-    margin-top: -12rem;
+    margin-bottom: -5rem;
   }
 
   .home .content p{
@@ -459,6 +459,44 @@ main aside .social-media li a:hover {
 
   .home .image{
     margin-left: -7rem;
+    position: relative;
+  }
+
+  .home .content h2{
+    text-align: center;
+    margin-left: -5rem;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+  }
+
+  .home .content h2 span{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  /* .home .content p{
+    font-size: 3rem;
+  }  */
+}
+
+@media (max-width: 770px) {
+  .home .btn{
+    margin-left: 6rem;
+  }
+
+  .home .image img{
+    width: 60%;
+    border-radius: 30%;
+    margin-top: -14rem;
+  }
+
+  .home .content p{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .home .image{
+    margin-left: -5rem;
     position: relative;
   }
 
