@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background: #f7f7f7;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6.5rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem 9%;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgb(239, 240, 231);
+}
+
+header .logo{
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #000;
+}
+
+header .logo i{
+  font-size: 2.2rem;
+}
+
+header .navbar ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navbar ul li{
+  margin-left: 20px;
+}
+
+header .navbar ul li a{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+  color: #F3CA52;
+}
+
+section{
+  min-height: 100vh;
+}
+
+#menu{
+  cursor: pointer;
+  display: none;
+  color: rgb(24, 2, 63);
+}
+
+@media screen and (max-width: 770px) {
+  #menu{
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    margin-top: 35px;
+    top: 6.5rem;
+    right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #A0DEFF;
+  }
+
+  header .navbar ul{
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  header .navbar ul li{
+    text-align: center;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover{
+    color: #FFF9D0;
+  }
+
+  .fa-times{
+    transform: rotate(180deg);
+  }
+
+  header .navbar.nav-toggle{
+    right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #menu{
+    display: block;
+  }
+
+  header{
+    height: 35px;
+  }
+  header .navbar {
+    position: fixed;
+    margin-top: 35px;
+    top: 6.5rem;
+    right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #A0DEFF;
+  }
+
+  header .navbar ul{
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  header .navbar ul li{
+    text-align: center;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover{
+    color: #FFF9D0;
+  }
+
+  .fa-times{
+    transform: rotate(180deg);
+  }
+
+  header .navbar.nav-toggle{
+    right: 0;
+  }
+}
+@media screen and (max-width: 390px) {
+  #menu{
+    display: block;
+  }
+
+  header{
+    height: 25px;
+  }
+  header .navbar {
+    position: fixed;
+    margin-top: 35px;
+    top: 6.5rem;
+    right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #A0DEFF;
+  }
+
+  header .navbar ul{
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  header .navbar ul li{
+    text-align: center;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover{
+    color: #FFF9D0;
+  }
+
+  .fa-times{
+    transform: rotate(180deg);
+  }
+
+  header .navbar.nav-toggle{
+    right: 0;
+  }
+}
+
+main{
+  flex: 1 1;
+}
+
+article{
+  flex: 1;
+}
+
+.home{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.home .content{
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+  margin-left: 5rem;
+}
+
+.home .image{
+  flex: 1 1 40rem;
+  z-index: 1;
+  margin-top: 7rem;
+  
+}
+
+.home .image img{
+  width: 70%;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-left: 12rem;
+}
+
+.home .image img:hover{
+  box-shadow:  0 5px 15px rgba(0, 0, 0, 0.5);;
+}
+
+.home .content h2{
+  font-size: 5rem;
+  font-weight: 800;
+  color: #151515;
+}
+
+.home .content h2 span{
+  font-size: 5rem;
+  font-weight: 600;
+  color: #0A6847;
+}
+
+.home .content p{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #FDDE55;
+  padding: 1rem;
+}
+
+.home .btn{
+  margin-top: 1rem;
+  position: absolute;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 4em;
+  transition: 0.5s;
+  color: #fff;
+  background:  #2506ad;
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  font-family: "Poppins", sans-serif;
+}
+
+.home .btn span{
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.home .btn i{
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: #F3CA52;
+  transition: 0.3s;
+}
+
+.home .btn:hover i{
+  transform: translateX(5px);
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+ 
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+ 
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #2506ad;
+ 
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+ 
+main aside .social-media li {
+  list-style-type: none;
+}
+ 
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+ 
+main aside .social-media li a:hover {
+  color: #89b0d9;
+}
+
+@media screen and (max-width: 448px) {
+  .home .btn{
+    margin-left: 6rem;
+  }
+
+  .home .image img{
+    width: 60%;
+    border-radius: 30%;
+    margin-top: -14rem;
+  }
+
+  .home .content p{
+    font-size: 2.5rem;
+  }
+
+  .home .image{
+    margin-left: -5rem;
+    position: relative;
+  }
+
+  .home .content h2{
+    text-align: center;
+    margin-left: -5rem;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+  }
+
+  .home .content h2 span{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  /* .home .content p{
+    font-size: 3rem;
+  }  */
+}
+
+@media screen and (max-width: 390px) {
+  .home .btn{
+    margin-left: 5rem;
+  }
+
+  .home .image img{
+    margin-top: -9rem;
+  }
+
+  .home .content p{
+    font-size: 2.5rem;
+  }
+
+  .home .image{
+    margin-left: -7rem;
+    position: relative;
+  }
+
+  .home .content h2{
+    text-align: center;
+    margin-left: -5rem;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+  }
+
+  .home .content h2 span{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  /* .home .content p{
+    font-size: 3rem;
+  }  */
+}
+@media screen and (max-width: 375px) {
+  .home .btn{
+    margin-left: 5rem;
+  }
+
+  .home .image img{
+    margin-top: -12rem;
+  }
+
+  .home .content p{
+    font-size: 2.5rem;
+  }
+
+  .home .image{
+    margin-left: -7rem;
+    position: relative;
+  }
+
+  .home .content h2{
+    text-align: center;
+    margin-left: -5rem;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+  }
+
+  .home .content h2 span{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  /* .home .content p{
+    font-size: 3rem;
+  }  */
+}
