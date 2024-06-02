@@ -372,147 +372,38 @@ main aside .social-media li a:hover {
   color: #89b0d9;
 }
 
-@media screen and (max-width: 448px) {
-  .home .btn{
-    margin-left: 6rem;
-  }
+@media (min-width: 400px) and (max-width: 450px){
 
-  .home .image img{
-    width: 60%;
-    border-radius: 30%;
-    margin-top: -14rem;
-  }
-
-  .home .content p{
-    font-size: 2.5rem;
-  }
-
-  .home .image{
-    margin-left: -5rem;
-    position: relative;
-  }
+  .home .content {
+    text-align: center;
+    margin-right: 3rem;
+    padding-top: 7rem;
+  } 
 
   .home .content h2{
-    text-align: center;
-    margin-left: -5rem;
-    margin-top: 2rem;
     font-size: 3.5rem;
-  }
-
-  .home .content h2 span{
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  /* .home .content p{
-    font-size: 3rem;
-  }  */
-}
-
-@media screen and (max-width: 392px) {
-  .home .btn{
-    margin-left: 5rem;
-  }
-
-  .home .image img{
-    margin-bottom: -5rem;
-  }
-
-  .home .content p{
-    font-size: 2.5rem;
   }
 
   .home .image{
     margin-left: -7rem;
-    position: relative;
-  }
-
-  .home .content h2{
-    text-align: center;
-    margin-left: -5rem;
-    margin-top: 2rem;
-    font-size: 3.5rem;
   }
 
   .home .content h2 span{
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  /* .home .content p{
-    font-size: 3rem;
-  }  */
-}
-
-@media screen and (max-width: 375px) {
-  .home .btn{
-    margin-left: 5rem;
-  }
-
-  .home .image img{
-    margin-bottom: -5rem;
-  }
-
-  .home .content p{
-    font-size: 2.5rem;
-  }
-
-  .home .image{
-    margin-left: -7rem;
-    position: relative;
-  }
-
-  .home .content h2{
-    text-align: center;
-    margin-left: -5rem;
-    margin-top: 2rem;
     font-size: 3.5rem;
   }
 
-  .home .content h2 span{
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  /* .home .content p{
-    font-size: 3rem;
-  }  */
-}
-
-@media (max-width: 770px) {
-  .home .btn{
-    margin-left: 6rem;
-  }
-
-  .home .image img{
-    width: 60%;
-    border-radius: 30%;
-    margin-top: -14rem;
-  }
-
-  .home .content p{
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .home .image{
-    margin-left: -5rem;
-    position: relative;
-  }
-
-  .home .content h2{
-    text-align: center;
-    margin-left: -5rem;
+  .home .btn {
     margin-top: 2rem;
-    font-size: 3.5rem;
+    margin-left: -8rem;
   }
 
-  .home .content h2 span{
-    font-size: 3rem;
-    text-align: center;
+  .home .image img {
+    margin-bottom: 7rem;
   }
-
-  /* .home .content p{
-    font-size: 3rem;
-  }  */
+  .home .content p {
+    font-size: 2.2rem;
+  }
+  .home .content p span {
+    font-size: 2.2rem;
+  }
 }
