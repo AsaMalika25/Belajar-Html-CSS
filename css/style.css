@@ -407,7 +407,7 @@ main aside .social-media li a:hover {
     font-size: 2.2rem;
   }
 }
-@media (min-width: 330px) and (max-width: 390px){
+@media (min-width: 330px) and (max-width: 395px){
 
   .home .content {
     text-align: center;
