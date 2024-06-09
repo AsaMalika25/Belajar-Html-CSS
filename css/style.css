@@ -377,7 +377,7 @@ main aside .social-media li a:hover {
   .home .content {
     text-align: center;
     margin-right: 3rem;
-    padding-top: 7rem;
+    padding-top: 6.5rem;
   } 
 
   .home .content h2{
@@ -397,9 +397,9 @@ main aside .social-media li a:hover {
     margin-left: -8rem;
   }
 
-  .home .image img {
-    margin-bottom: 7rem;
-  }
+  /* .home .image img {
+    margin-bottom: 5rem;
+  } */
   .home .content p {
     font-size: 2.2rem;
   }
@@ -407,6 +407,42 @@ main aside .social-media li a:hover {
     font-size: 2.2rem;
   }
 }
+@media (min-width: 330px) and (max-width: 395px){
+
+  .home .content {
+    text-align: center;
+    margin-right: 3rem;
+    padding-top: 4rem;
+  } 
+
+  .home .content h2{
+    font-size: 3.5rem;
+  }
+
+  .home .image{
+    margin-left: -8rem;
+  }
+
+  .home .content h2 span{
+    font-size: 3.5rem;
+  }
+
+  .home .btn {
+    margin-top: 2rem;
+    margin-left: -8rem;
+  }
+
+  /* .home .image img {
+    margin-bottom: rem;
+  } */
+  .home .content p {
+    font-size: 2.2rem;
+  }
+  .home .content p span {
+    font-size: 2.2rem;
+  }
+}
+
 @media (min-width: 330px) and (max-width: 395px){
 
   .home .content {
