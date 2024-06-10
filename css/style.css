@@ -372,77 +372,41 @@ main aside .social-media li a:hover {
   color: #89b0d9;
 }
 
-@media (min-width: 400px) and (max-width: 450px){
-
-  .home .content {
+@media screen and (max-width: 768px) {
+  .home .content{
+    /* flex-direction: column;
+    gap: 2rem; */
+    padding-top: 5rem;
     text-align: center;
-    margin-right: 3rem;
-    padding-top: 5.5rem;
-  } 
-
-  .home .content h2{
-    font-size: 3.5rem;
+    margin-right: 4rem;
   }
 
-  .home .image{
-    margin-left: -5rem;
+  .home .content h2{
+    font-size: 3rem;
+    font-weight: 800;
   }
 
   .home .content h2 span{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
   }
 
-  .home .btn {
-    margin-top: 2rem;
+  .home .content p{
+    color: #000;
+    font-size: 2rem;
+  }
+  
+  .home .btn{
     margin-left: -8rem;
-  }
-
-  .home .image img {
-    margin-top: -7rem;
-    width: 60%;
-  }
-  .home .content p {
-    font-size: 2.2rem;
-  }
-  .home .content p span {
-    font-size: 2.2rem;
-  }
-}
-@media (min-width: 330px) and (max-width: 395px){
-
-  .home .content {
-    text-align: center;
-    margin-right: 3rem;
-    padding-top: 6.7rem;
-  } 
-
-  .home .content h2{
-    font-size: 3.5rem;
   }
 
   .home .image{
-    margin-left: -5rem;
-  }
+    padding-right: 7rem;
+    padding-bottom: 8rem;
+  } 
 
-  .home .content h2 span{
-    font-size: 3.5rem;
-  }
-
-  .home .btn {
-    margin-top: 1rem;
-    margin-left: -8rem;
-  }
-
-  .home .image img {
-    margin-top: -3rem;
-    width: 60%;
-  }
-
-  .home .content p {
-    font-size: 2.2rem;
-  }
-  .home .content p span {
-    font-size: 2.2rem;
+  .home .image img{
+    margin-left: 9rem;
   }
 }
 
