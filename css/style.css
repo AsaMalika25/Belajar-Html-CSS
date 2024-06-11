@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -20,6 +21,15 @@ body{
   background: #f7f7f7;
 }
 
+.heading {
+  font-size: 3.5rem;
+  color: rgb(32, 32, 32);
+  font-weight: 800;
+  text-align: center;
+}
+.heading span {
+  color: rgb(115, 3, 167);
+}
 
 header{
   position: fixed;
@@ -69,7 +79,7 @@ header .navbar ul li a:hover{
 }
 
 section{
-  min-height: 100vh;
+  height: 100vh;
 }
 
 #menu{
@@ -271,11 +281,11 @@ article{
 }
 
 .home .image img{
-  width: 70%;
+  width: 65%;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  margin-left: 12rem;
+  margin-left: 8rem;
 }
 
 .home .image img:hover{
@@ -372,7 +382,7 @@ main aside .social-media li a:hover {
   color: #89b0d9;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .home .content{
     /* flex-direction: column;
     gap: 2rem; */
@@ -410,3 +420,222 @@ main aside .social-media li a:hover {
   }
 }
 
+
+@media screen and (min-width: 768px) and (max-width: 850px){
+  .home .content {
+    padding-top: 7rem;
+    text-align: center;
+  }
+
+  .home .image img{
+      width: 50%;
+      margin-left: 18rem;
+  }
+
+
+
+  .home .content h2 {
+      font-size: 5rem;
+  }
+
+  .home .content h2 span {
+      font-size: 4.5rem;
+  }
+
+  .home .content p {
+      font-size: 4rem;
+  }
+
+  .home .btn{
+    margin-left: -8rem;
+  }
+}
+
+
+@media screen and (min-width: 884px) and (max-width: 1023px) {
+  .home .content {
+      padding-top: 7rem;
+      text-align: center;
+  }
+
+  .home .image img{
+      width: 60%;
+      margin-left: rem;
+  }
+
+  
+  
+  .home .content h2 {
+      font-size: 5rem;
+  }
+
+  .home .content h2 span {
+      font-size: 4.5rem;
+  }
+
+  .home .content p {
+      font-size: 4rem;
+  }
+
+  .home .btn{
+    margin-left: -8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home .content h2 {
+      font-size: 3rem;
+  }
+
+  .home .content h2 span {
+      font-size: 3rem;
+  }
+
+  .home .content p {
+      font-size: 2.5rem;
+  }
+
+  .home .btn span {
+      font-size: 2rem;
+  }
+
+  .home .btn i {
+      font-size: 1.5rem;
+  }
+}
+
+.about{
+  background: rgb(255, 255, 255);
+}
+
+.about .row{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+
+
+.about .row .image{
+  text-align: center;
+  flex: 1 1 35rem;
+}
+
+.about .row .image img{
+  margin: 4rem;
+  width: 30rem;
+  height: auto;
+  border-radius: 5%;
+  box-shadow:  0 5px 10px rgba(0, 0, 0, 0.6);
+  mix-blend-mode: luminosity;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.about .row .image img:hover{
+  mix-blend-mode: normal;
+}
+
+.about .row .content{
+  flex: 1 1 45rem;
+  padding: 3rem;
+}
+
+.about .row .content h3{
+  color: rgb(27, 27, 27);
+  font-size: 3.5rem;
+}
+
+.about .row .content .tag{
+  font-size: 2rem;
+  color: #020133;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.about .row .content p{
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.about .row .content .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+.about .row .content .box-container p{
+  text-transform: none;
+}
+
+.about .row .content .box-container p span{
+  color: #011aff;
+}
+
+.resumebtn{
+  margin-top: 5rem;
+}
+
+.resumebtn .btn{
+  padding: 1.7rem 3rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
+}
+
+.resumebtn .btn span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.resumebtn .btn i{
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.resumebtn .btn:hover{
+  background: #1a047e;
+}
+
+.resumebtn .btn i:hover{
+  transform: translateX(5px);
+}
+
+
+@media screen and (max-width: 767px) {
+  .about .row .image{
+    margin-top: 2rem;
+  }
+
+  .about .row .image img{
+    margin: 0 auto;
+    width: 50%;
+    mix-blend-mode: normal;
+  }
+
+  .about .row{
+    padding: 0.5rem;
+    margin-bottom: 7rem;
+  }
+
+  .about .row .content{
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .about .row .content .box-container{
+    gap: 0;
+  }
+}
