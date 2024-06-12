@@ -639,3 +639,48 @@ main aside .social-media li a:hover {
     gap: 0;
   }
 }
+
+.project {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+  margin-top: 2rem;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .img-slide{
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .project {
+    height: 50vh;
+  }
+
+  .slider img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    height: 30vh;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+}
