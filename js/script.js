@@ -10,12 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  const slides = document.querySelectorAll('.img-slide');
+  const slides = document.querySelectorAll('.img-slider, .img-slide');
   const slider = document.querySelector('.slider');
   let index = 0;
 
   function showSlide(i) {
-    const totalSlides = slides.length;
     const newTransformValue = -100 * i + '%';
     slider.style.transform = `translateX(${newTransformValue})`;
   }
