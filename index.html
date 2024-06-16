@@ -1,102 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belajar Membuat Website</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
-<body>
-  <header>
-    <a href="" class="logo">Abdi Malika</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Membuat Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="" class="logo">Abdi Malika</a>
 
-    <div id="menu" class="fa fa-bars"></div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="" class="active">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Item</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <div id="menu" class="fa fa-bars"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Item</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <article>
-      <section class="home" id="home">
+    <main>
+      <article>
+        <section class="home" id="home">
           <div class="content">
-            <h2>Wellcome, In My portofolio <br><span>Abdi Malika</span></h2>
+            <h2>Wellcome, In My portofolio <br /><span>Abdi Malika</span></h2>
             <p>Laravel Experience</p>
-            <a href="" class="btn"><span>About Me</span>
+            <a href="" class="btn"
+              ><span>About Me</span>
               <i class="fa fa-arrow-down"></i>
             </a>
-          
           </div>
 
           <div class="image">
-            <img src="assets/image/ilustrasi.jpg" alt="">
+            <img src="assets/image/ilustrasi.jpg" alt="" />
           </div>
-      </section>
-    </article>
+        </section>
+      </article>
 
-    <article>
-      <section class="about" id="about">
-        <h2 class="heading"><i class="fas fa-user-alt"></i>About<span>Me</span></h2>
-        <div class="row">
-          <div class="image">
-            <img src="assets/image/ilustrasi.jpg" alt="">
-          </div>
-
-          <div class="content">
-            <h3>Abdi Malika Khairul Asa</h3>
-            <span class="tag">Backend Developer</span>
-            <p>Saya Lulusan SMK Negeri 1 Kota Bekasi Memiliki kemampuan menganilis data.
-              Memahami penggunaan framework Laravel, dan dasar-dasar pembuatan website.
-            </p>
-
-            <div class="box-container">
-              <div class="box">
-                <p><span>email :</span>khairulasa9@gmail.com</p>
-                <p><span>place :</span>Bintara, Bekasi Barat, Kota Bekasi, Indonesia</p>
-              </div>
+      <article>
+        <section class="about" id="about">
+          <h2 class="heading">
+            <i class="fas fa-user-alt"></i>About<span>Me</span>
+          </h2>
+          <div class="row">
+            <div class="image">
+              <img src="assets/image/ilustrasi.jpg" alt="" />
             </div>
 
-              <div class="resumebtn">
-                <a href="" class="btn"><span>resume</span><i class="fas fa-chevron-right"></i></a>
+            <div class="content">
+              <h3>Abdi Malika Khairul Asa</h3>
+              <span class="tag">Backend Developer</span>
+              <p>
+                Saya Lulusan SMK Negeri 1 Kota Bekasi Memiliki kemampuan
+                menganilis data. Memahami penggunaan framework Laravel, dan
+                dasar-dasar pembuatan website.
+              </p>
+
+              <div class="box-container">
+                <div class="box">
+                  <p><span>email :</span>khairulasa9@gmail.com</p>
+                  <p>
+                    <span>place :</span>Bintara, Bekasi Barat, Kota Bekasi,
+                    Indonesia
+                  </p>
+                </div>
               </div>
+
+              <div class="resumebtn">
+                <a href="" class="btn"
+                  ><span>resume</span><i class="fas fa-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article>
+        <section class="project" id="slides">
+          <h2 class="heading">
+            <i class="fa-solid fa-briefcase"></i>MY<span>project</span>
+          </h2>
+
+          <div class="box-picture">
+            <div class="slider">
+              <img
+              src="assets/image/landing page.PNG"
+              alt="Gambar 1"
+              class="img-slider"
+              />
+              <img
+                src="assets/image/project ukom.PNG"
+                alt="Gambar2"
+                class="img-slide"
+              />
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article>
+        <section class="contact" id="contact">
+  
+          <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+        
+          <div class="container">
+            <div class="content">
+              <div class="image-box">
+                <img draggable="false" src="assets/image/ilustrasi.jpg" alt="">
+              </div>
+            <form id="contact-form">
               
+              <div class="form-group">
+                <div class="field">
+                  <input type="text" name="name" placeholder="Name" required>
+                  <i class='fas fa-user'></i>
+                </div>
+                <div class="field">
+                  <input type="text" name="email" placeholder="Email" required>
+                  <i class='fas fa-envelope'></i>
+                </div>
+                <div class="field">
+                  <input type="text" name="phone" placeholder="Phone">
+                  <i class='fas fa-phone-alt'></i>
+                </div>
+                <div class="message">
+                <textarea placeholder="Message" name="message" required></textarea>
+                <i class="fas fa-comment-dots"></i>
+                </div>
+                </div>
+              <div class="button-area">
+                <button type="submit">
+                  Submit <i class="fa fa-paper-plane"></i></button>
+              </div>
+            </form>
+          </div>
+          </div>
+        </section>
+      </article>
+
+      <aside>
+        <div class="social-media">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <section class="footer" id="footer">
+        <div class="box-container">
+
+          <div class="box">
+            <h3>Abdi Fortofolio</h3>
+            <p>
+              Thank you for visiting my personal portfolio website. Connect with
+              me over socials. <br />
+              <br />
+              Keep Rising 🚀. Connect with me over live chat!
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"><i class="fas fa-chevron-circle-right"></i>Home</a>
+            <a href="#about"><i class="fas fa-chevron-circle-right"></i>About</a>
+            <a href="#work"><i class="fas fa-chevron-circle-right"></i>Work</a>
+            <a href="#contact"><i class="fas fa-chevron-circle-right"></i>Contact</a>
+          </div>
+
+          <div class="box">
+            <h3>contact info</h3>
+            <p><i class="fas fa-phone"></i>+62 XXX-XXX-XXXX</p>
+            <p><i class="fas fa-envelope"></i>khairulasa9@gmail.com</p>
+            <p><i class="fas fa-map-marked-alt"></i>Kota Bekasi, Indonesia</p>
+            <div class="share">
+              <a
+                href=""
+                class="fab fa-linkedin"
+                aria-label="LinkedIn"
+                target="_blank"
+              ></a>
+              <a
+                href="https://github.com/AsaMalika25"
+                class="fab fa-github"
+                aria-label="GitHub"
+                target="_blank"
+              ></a>
+              <a
+                href=""
+                class="fas fa-envelope"
+                aria-label="Mail"
+                target="_blank"
+              ></a>
+            </div>
           </div>
         </div>
       </section>
-    </article>
-
-    <article>
-      <section class="project" id="slides">
-        <h2 class="heading"><i class="fa-solid fa-briefcase"></i>MY<span>project</span></h2>
-
-        <div class="box-picture">
-          <div class="slider">
-            <img src="assets/image/landing page.PNG" alt="Gambar 1" class="img-slider">
-            <img src="assets/image/project ukom.PNG" alt="Gambar 2" class="img-slide">
-          </div>
-        </div>
-      </section>
-      
-    </article>
-    <aside>
-      <div class="social-media">
-        <ul>
-          <li>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-  </main>
-<script src="js/script.js"></script>   
-</body>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
