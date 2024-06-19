@@ -311,6 +311,30 @@ article{
   padding: 1rem;
 }
 
+.home .content p span {
+  font-size: 2.5rem;
+  color: rgb(148, 8, 8);
+  font-weight: 600;
+  position: relative;
+}
+
+.home .content #typing-text::after {
+  content: "";
+  height: 2rem; /* Adjust this to match the height of the text */
+  width: 2px;
+  background: #011aff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 .home .btn{
   margin-top: 1rem;
   position: absolute;
@@ -834,22 +858,30 @@ form .button-area {
   left: 8px;
 }
 /* contact section media queries starts */
-@media (max-width: 900px) {
+@media (max-width: 762px) {
   .contact {
     min-height: 70vh;
   }
   .contact .container {
     margin: 3rem 0 2rem 0;
   }
-  .contact .container .content {
-    padding: 18px 12px;
-  }
+
   .contact .content .image-box {
     display: none;
   }
   .contact .content form {
     width: 100%;
     margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 920px){
+  .contact .container{
+    width: 88%;
+  }
+
+  form .message{
+    width: 75%;
   }
 }
 
