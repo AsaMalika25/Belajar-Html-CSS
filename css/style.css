@@ -686,13 +686,31 @@ main aside .social-media li a:hover {
 
 @media (max-width: 768px) {
   .slider img {
-    width: 70%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
   }
 
   .slider .img-slider,
   .slider .img-slide {
-    width: 70%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 880px) {
+
+  .project{
+    height: 40vh;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider .img-slider,
+  .slider .img-slide {
+    width: 100%;
     object-fit: contain;
   }
 }
@@ -720,6 +738,22 @@ main aside .social-media li a:hover {
     width: 110%;
     height: auto;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 1024px) {
+  .project{
+    height: 100vh;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider .img-slider,
+  .slider .img-slide {
+    width: 100%;
+    object-fit: contain;
   }
 }
 
